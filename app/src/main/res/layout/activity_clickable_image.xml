@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClickableImageActivity"
+    android:background="@drawable/advanced_level_background">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView2"
+        android:layout_width="175dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="156dp"
+        android:onClick="identifyImage1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/Circular"
+        app:strokeColor="@color/colorAccent"
+        app:strokeWidth="7dp"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView4"
+        android:layout_width="175dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="16dp"
+        android:onClick="identifyImage3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:shapeAppearanceOverlay="@style/Circular"
+        app:strokeColor="@color/colorAccent"
+        app:strokeWidth="7dp"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/defaultText"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:fontFamily="@font/spicy_rice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <TextView
+        android:id="@+id/answerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/defaultText"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:fontFamily="@font/spicy_rice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.918" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView3"
+        android:layout_width="175dp"
+        android:layout_height="118dp"
+        android:onClick="identifyImage2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.11"
+        app:shapeAppearanceOverlay="@style/Circular"
+        app:strokeColor="@color/colorAccent"
+        app:strokeWidth="7dp"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <Button
+        android:id="@+id/next_screen_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="nextScreen"
+        android:text="@string/next_btn_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.936" />
+
+    <TextView
+        android:id="@+id/countdown_timer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        app:fontFamily="@font/kavoon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.649"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.151" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:text="@string/find_this_car_make_label"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:fontFamily="@font/spicy_rice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/answer_label_text"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:fontFamily="@font/spicy_rice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.928" />
+
+    <TextView
+        android:id="@+id/timeleft_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_remaining_label"
+        android:textColor="#FFFFFF"
+        app:fontFamily="@font/kavoon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.152" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

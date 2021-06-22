@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Car GO</string>
+    <string name="identify_the_car_make">Identify the Car make</string>
+    <string name="hints">Hints</string>
+    <string name="identify_the_car_image">Identify the Car Image</string>
+    <string name="advanced_level">Advanced Level</string>
+    <string name="car_image_description">Car Image</string>
+    <string name="submit_button_text">Identify</string>
+    <string name="correct_message">CORRECT! </string>
+    <string name="wrong_message">WRONG!</string>
+    <string name="nissan_label">NISSAN</string>
+    <string name="bugatti_label">BUGATTI</string>
+    <string name="micro_label">MICRO</string>
+    <string name="audi_label">AUDI</string>
+    <string name="toyota_label">TOYOTA</string>
+    <string name="next_button">NEXT</string>
+    <string name="no_car_selected">NO CAR SELECTED</string>
+    <string name="no_make_selected">NO MAKE SELECTED</string>
+    <string name="honda_label">Honda</string>
+    <string name="finish_label">FINISH</string>
+    <string name="guess_the_car_make">Guess the make</string>
+    <string name="time_remaining_label">Time Remaining</string>
+    <string name="defaultText">TextView</string>
+    <string name="submit_btn_text">Submit</string>
+    <string name="remaining_attempts_text">Remaining Attempts:</string>
+    <string name="image2_content_dp">image2</string>
+    <string name="score_label_text">Score:</string>
+    <string name="image3_content_dp">image3</string>
+    <string name="image1_content_dp">image1</string>
+    <string name="next_btn_text">Next</string>
+    <string name="find_this_car_make_label">Find this car make:</string>
+    <string name="answer_label_text">Answer:</string>
+    <string name="timer_label_text">Timer</string>
+    <string name="remaining_attempts_count">3</string>
+    <string name="hidden_make_label_text">Hidden Make:</string>
+</resources>
